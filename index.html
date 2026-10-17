@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cleaning & Fumigation Services in Nairobi | Milgil</title>
   <meta name="description" content="Milgil Cleaning & Fumigation Services provides professional cleaning, fumigation and pest-control services for homes, offices and commercial properties in Nairobi and surrounding areas. Get a quote today.">
   <meta name="theme-color" content="#a17400">
+  <meta name="keywords" content="cleaning services,cleaning, fumigation, pest control, Nairobi, Milgil Cleaning, professional cleaning">
+  <meta name="author" content="Milgil Cleaning & Fumigation Services">
+  <title>Cleaning & Fumigation Services in Nairobi | Milgil</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SB23DQCGG"></script>
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5826307360958538"
+     crossorigin="anonymous"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0SB23DQCGG');
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18127462212">
+</script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="icon" href="flavicon.jpeg" type="image/x-icon">
@@ -37,8 +51,110 @@
         <a class="btn btn-primary nav-cta" href="#quote">GET A FREE QUOTE</a>
       </nav>
     </div>
+
+
+</script>
   </header>
 
+<!-- Floating Social Buttons -->
+<div class="fab-container">
+
+  <div class="fab-options social-icons">
+
+    <!-- WhatsApp -->
+    <a 
+      href="https://wa.me/254725274364?text=Hello%20Milgil%20Cleaning%20%26%20Fumigation%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp">
+      <img src="whatsapp.jpg" alt="WhatsApp">
+    </a>
+
+    <!-- Messenger -->
+    <a 
+      href="https://www.facebook.com/profile.php?id=61579428159258"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Messenger">
+      <img src="Messenger.jpg" alt="Messenger">
+    </a>
+
+    <!-- Instagram -->
+    <a 
+      href="https://www.instagram.com/milgil_cleaners/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram">
+      <img src="insta.jpg" alt="Instagram">
+    </a>
+
+    <!-- TikTok -->
+    <a 
+      href="https://www.tiktok.com/@milgil.cleaners"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="TikTok">
+      <img src="tiktok.jpg" alt="TikTok">
+    </a>
+
+  </div>
+
+  <!-- Floating Button -->
+  <button 
+    type="button"
+    class="fab"
+    aria-label="Open social media"
+    aria-expanded="false">
+    <i class="fas fa-comments"></i>
+  </button>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const fabContainer = document.querySelector(".fab-container");
+  const fabButton = document.querySelector(".fab");
+  const fabIcon = fabButton.querySelector("i");
+
+  if (!fabContainer || !fabButton) return;
+
+  fabButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    fabContainer.classList.toggle("active");
+
+    const isActive = fabContainer.classList.contains("active");
+
+    fabButton.setAttribute("aria-expanded", isActive);
+
+    if (isActive) {
+      fabIcon.classList.remove("fa-comments");
+      fabIcon.classList.add("fa-times");
+      fabButton.setAttribute("aria-label", "Close social media");
+    } else {
+      fabIcon.classList.remove("fa-times");
+      fabIcon.classList.add("fa-comments");
+      fabButton.setAttribute("aria-label", "Open social media");
+    }
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!fabContainer.contains(event.target)) {
+      fabContainer.classList.remove("active");
+
+      fabIcon.classList.remove("fa-times");
+      fabIcon.classList.add("fa-comments");
+
+      fabButton.setAttribute("aria-expanded", "false");
+      fabButton.setAttribute("aria-label", "Open social media");
+    }
+  });
+
+});
+</script>
+  
   <main id="home">
     <section class="hero">
       <div class="container hero-grid">
@@ -65,6 +181,7 @@
 </div>
 </div>
     </section>
+    
 
    <!-- <section class="trust-bar">
       <div class="container trust-grid">
@@ -707,130 +824,96 @@
     }));
   </script>
 <script>
-  const heroImages = [
-  {
-    image: "front 4.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 1.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 2.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 3.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 4.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 5.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 6.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 7.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  },
-  {
-    image: "front 8.jpeg",
-    html: `
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#quote">GET A FREE QUOTE</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/254725274364" target="_blank" rel="noopener">
-          💬 WHATSAPP US
-        </a>
-      </div>
-    `
-  }
+const heroImages = [
+  { image: "front 4.jpeg" },
+  { image: "front 1.jpeg" },
+  { image: "front 2.jpeg" },
+  { image: "front 3.jpeg" },
+  { image: "front 4.jpeg" },
+  { image: "front 5.jpeg" },
+  { image: "front 6.jpeg" },
+  { image: "front 7.jpeg" },
+  { image: "front 8.jpeg" }
 ];
 
-  let heroIndex = 0;
+let heroIndex = 0;
 
-setInterval(() => {
-  heroIndex = (heroIndex + 1) % heroImages.length;
+const image = document.getElementById("heroGalleryImage");
+const text = document.getElementById("heroImageText");
 
-  const image = document.getElementById("heroGalleryImage");
-  const text = document.getElementById("heroImageText");
+function updateHero() {
 
   image.style.opacity = "0";
   text.style.opacity = "0";
 
   setTimeout(() => {
-    image.src = heroImages[heroIndex].image;
-    image.alt = "Milgil Cleaning Services";
 
-    text.innerHTML = heroImages[heroIndex].html;
+    image.src = heroImages[heroIndex].image;
+    image.alt = "Milgil Cleaning & Fumigation Services";
+
+    text.innerHTML = `
+      <div class="hero-actions">
+
+        <a 
+          class="btn btn-primary" 
+          href="#quote"
+          onclick="goToQuote(event)">
+          GET A FREE QUOTE
+        </a>
+
+        <a 
+          class="btn btn-whatsapp" 
+          href="https://wa.me/254725274364?text=Hello%20Milgil%20Cleaning%20%26%20Fumigation%20Services%2C%20I%20would%20like%20to%20get%20a%20free%20quote."
+          target="_blank"
+          rel="noopener noreferrer">
+          💬 WHATSAPP US
+        </a>
+
+      </div>
+    `;
 
     image.style.opacity = "1";
     text.style.opacity = "1";
+
   }, 300);
+}
+
+
+// GET A FREE QUOTE button
+function goToQuote(event) {
+
+  event.preventDefault();
+
+  const quoteSection = document.getElementById("quote");
+
+  if (quoteSection) {
+
+    quoteSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+  } else {
+
+    console.error("Quote section with id='quote' was not found.");
+
+  }
+}
+
+
+// Change image every 5 seconds
+setInterval(() => {
+
+  heroIndex = (heroIndex + 1) % heroImages.length;
+
+  updateHero();
 
 }, 2000);
+
+
+// Load first slide immediately
+updateHero();
+
 </script>
 </body>
 </html>
